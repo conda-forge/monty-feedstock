@@ -1,20 +1,19 @@
 {% set name = "monty" %}
-{% set version = "0.9.6" %}
-{% set sha256 = "bbf05646c4e86731c2398a57b1044add7487fc4ad03122578599ddd9a8892780" %}
+{% set version = "1.0.4" %}
+{% set sha256 = "3dfa0e06258d06c76bd523a0b964da5d23de5950e9c0ca52472b73043a1b85d9" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/cc/f4/bbffb55c900824e2be059f9d6c20da9298506db639847f8f16321a25f303/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: "python -m pip install . --no-deps --ignore-installed -vvv" 
 
 requirements:
   host:
@@ -36,14 +35,11 @@ about:
   license_family: MIT
   license_file: LICENSE.rst
   summary: 'Monty is the missing complement to Python.'
-  description: |
-    Monty is the missing complement to Python. Monty implements supplementary useful functions
-    for Python that are not part of the standard library. Examples include useful utilities like
-    transparent support for zipped files, useful design patterns such as singleton and cached_class, 
-    and many more.
+  description: Monty is the missing complement to Python. Monty implements supplementary useful functions for Python that are not part of the standard library. Examples include useful utilities like transparent support for zipped files, useful design patterns such as singleton and cached_class, and many more.
   doc_url: https://materialsvirtuallab.github.io/monty/
   dev_url: https://github.com/materialsvirtuallab/monty
 
 extra:
   recipe-maintainers:
+    - npavlovikj
     - shyuep
