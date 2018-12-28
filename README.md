@@ -9,24 +9,17 @@ Feedstock license: BSD 3-Clause
 
 Summary: Monty is the missing complement to Python.
 
-Monty is the missing complement to Python. Monty implements supplementary useful functions
-for Python that are not part of the standard library. Examples include useful utilities like
-transparent support for zipped files, useful design patterns such as singleton and cached_class,
-and many more.
-
+Monty is the missing complement to Python. Monty implements supplementary useful functions for Python that are not part of the standard library. Examples include useful utilities like transparent support for zipped files, useful design patterns such as singleton and cached_class, and many more.
 
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/monty-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/monty-feedstock)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/monty-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/monty-feedstock)
 
 Current release info
 ====================
-
-| Name | Downloads | Version | Platforms |
-| --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-monty-green.svg)](https://anaconda.org/conda-forge/monty) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/monty.svg)](https://anaconda.org/conda-forge/monty) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/monty.svg)](https://anaconda.org/conda-forge/monty) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/monty.svg)](https://anaconda.org/conda-forge/monty) |
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/monty/badges/version.svg)](https://anaconda.org/conda-forge/monty)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/monty/badges/downloads.svg)](https://anaconda.org/conda-forge/monty)
 
 Installing monty
 ================
