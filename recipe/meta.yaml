@@ -1,6 +1,6 @@
 {% set name = "monty" %}
-{% set version = "2.0.4" %}
-{% set sha256 = "11decd01453eb758d128431f7c70cc7dcfa28c83fdf45087700390357db362df" %}
+{% set version = "2.0.5" %}
+{% set sha256 = "c3d16994f187ad991f3b3bdcf04172c9246838205ea5dc3cc923e774caf8dabd" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
