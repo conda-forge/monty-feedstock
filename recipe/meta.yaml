@@ -1,6 +1,6 @@
 {% set name = "monty" %}
-{% set version = "3.0.2" %}
-{% set sha256 = "cba178a2a445326a80d2d457a485e66268f22a48fca99bc21cf6f473c96e1829" %}
+{% set version = "3.0.3" %}
+{% set sha256 = "3dc3d2788d2a536185f425bec2fc0bbd79dcd4c98b413d8146b88b86e413d25b" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -33,7 +33,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.rst
-  summary: 'Monty is the missing complement to Python.'
+  summary: Monty is the missing complement to Python.
   description: |
     Monty is the missing complement to Python. Monty implements supplementary useful functions
     for Python that are not part of the standard library. Examples include useful utilities like
