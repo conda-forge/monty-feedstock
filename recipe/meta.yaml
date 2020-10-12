@@ -21,7 +21,6 @@ requirements:
     - python
   run:
     - python
-    - six
 
 test:
   imports:
