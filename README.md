@@ -5,9 +5,13 @@ Home: https://github.com/materialsvirtuallab/monty
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/monty-feedstock/blob/master/LICENSE.txt)
 
 Summary: Monty is the missing complement to Python.
+
+Development: https://github.com/materialsvirtuallab/monty
+
+Documentation: https://materialsvirtuallab.github.io/monty/
 
 Monty is the missing complement to Python. Monty implements supplementary useful functions
 for Python that are not part of the standard library. Examples include useful utilities like
