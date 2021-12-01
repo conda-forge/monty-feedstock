@@ -1,6 +1,6 @@
 {% set name = "monty" %}
-{% set version = "2021.8.17" %}
-{% set sha256 = "d4d5b85566bda80360e275e6ffb72228d203de68c5155446a0e09f19c63e8540" %}
+{% set version = "2021.12.1" %}
+{% set sha256 = "3514a1d9ca3d376347567563c1afad7ea45526c39244cdeb9817d5fdc5c370dc" %}
 
 package:
   name: {{ name|lower }}
