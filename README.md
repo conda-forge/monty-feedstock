@@ -1,11 +1,11 @@
-About monty
-===========
+About monty-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/monty-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/materialsvirtuallab/monty
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/monty-feedstock/blob/main/LICENSE.txt)
 
 Summary: Monty is the missing complement to Python.
 
