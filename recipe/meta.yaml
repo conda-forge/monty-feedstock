@@ -1,31 +1,35 @@
 {% set name = "monty" %}
 {% set version = "2023.11.3" %}
-{% set sha256 = "d961c14b0b20901c7603aa00d275e62dee8333fbdaf1179f5d862c6fb3f3c52f" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/monty-{{ version }}.tar.gz
+  sha256: d961c14b0b20901c7603aa00d275e62dee8333fbdaf1179f5d862c6fb3f3c52f
 
 build:
   noarch: python
-  number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
   host:
+    - python >=3.9
+    - setuptools
+    - setuptools-scm
     - pip
-    - python >=3.6
   run:
-    - python >=3.6
+    - python >=3.9
 
 test:
   imports:
     - monty
-    - monty.os
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/materialsvirtuallab/monty
