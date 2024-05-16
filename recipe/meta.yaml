@@ -1,5 +1,5 @@
 {% set name = "monty" %}
-{% set version = "2024.4.17" %}
+{% set version = "2024.5.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/monty-{{ version }}.tar.gz
-  sha256: 76dcdf72bda37a1d752751f317e5e045dd74746af7d86c9ee174ac370247d33a
+  sha256: 2e7236020bd47dade14056707f0aeee94454bcf093ef5129a576d40bcdcfe15e
 
 build:
   noarch: python
