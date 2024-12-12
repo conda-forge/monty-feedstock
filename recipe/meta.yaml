@@ -1,13 +1,13 @@
 {% set name = "monty" %}
-{% set version = "2024.10.21" %}
+{% set version = "2024.12.10" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/monty-{{ version }}.tar.gz
-  sha256: da69daf11075144c4e4fca1038413cf6ef0fafd3398954b5867de6b43ae5de1f
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/monty-{{ version }}.tar.gz
+  sha256: 802f9b03a07172d4841dea63c60c51389be45c20b5ce21ffb2f78f7b4b99daa0
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - setuptools-scm
     - pip
   run:
-    - numpy <2.0.0
+    - numpy
     - ruamel.yaml
     - python >=3.9
 
