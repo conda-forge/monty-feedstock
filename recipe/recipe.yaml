@@ -1,0 +1,55 @@
+schema_version: 1
+
+context:
+  name: monty
+  version: "2026.2.18"
+  python_min: "3.11"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/monty-${{ version }}.tar.gz
+  sha256: e34e77abe7454ab84a9eeab7d909dbb500e3fa114c1849352ecd4570feb72be0
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools
+    - setuptools-scm
+    - pip
+  run:
+    - numpy
+    - ruamel.yaml
+    - python >=${{ python_min }}
+
+tests:
+  - python:
+      imports:
+        - monty
+      pip_check: true
+      python_version: ${{ python_min }}
+
+about:
+  license: MIT
+  license_file: LICENSE.rst
+  summary: Monty is the missing complement to Python.
+  description: |
+    Monty is the missing complement to Python. Monty implements supplementary useful functions
+    for Python that are not part of the standard library. Examples include useful utilities like
+    transparent support for zipped files, useful design patterns such as singleton and cached_class,
+    and many more.
+  homepage: https://github.com/materialsvirtuallab/monty
+  repository: https://github.com/materialsvirtuallab/monty
+  documentation: https://materialsvirtuallab.github.io/monty/
+
+extra:
+  recipe-maintainers:
+    - shyuep
+    - jan-janssen
