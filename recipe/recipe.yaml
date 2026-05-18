@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: monty
-  version: "2026.2.18"
+  version: "2026.5.18"
   python_min: "3.11"
 
 package:
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/monty-${{ version }}.tar.gz
-  sha256: e34e77abe7454ab84a9eeab7d909dbb500e3fa114c1849352ecd4570feb72be0
+  sha256: b2d8d5c78030e889f6407fa9d8c8c4e3df05fc380251cdf85a119cd1e49c3fdd
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
